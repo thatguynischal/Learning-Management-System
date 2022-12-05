@@ -1,0 +1,535 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="css/main.css" />
+    <title>TekGro LMS</title>
+  </head>
+  <body>
+    <div class="font-poppins p-2 flex flex-col gap-2">
+      <div class="navbar w-full">
+        <div class="flex gap-2 h-20">
+          <div class="profile__section card flex gap-5 justify-center items-center w-1/5">
+            <img src="./assets/Ellipse 1.png" alt="" class="profile__image"/>
+            <div class="profile__text">
+              <p class="font-bold">Chandler Bing</p>
+              <p class="text-xs text-slate-500">#6969</p>
+            </div>
+            <button
+              class="profile__button bg-transparent hover:bg-blue-400 font-semibold hover:text-white py-2 px-2 hover:border-transparent rounded-3xl"
+            >
+              <svg
+                width="25"
+                height="25"
+                viewBox="0 0 25 25"
+                fill="none"
+                xmlns="http://www.w3.org/2000/svg"
+              >
+                <path
+                  d="M17.09 9.09L12.5 13.67L7.91 9.09L6.5 10.5L12.5 16.5L18.5 10.5L17.09 9.09Z"
+                  fill="#333333"
+                />
+              </svg>
+            </button>
+          </div>
+          <div class="search__bar card flex justify-center items-center w-4/5">
+            <div class="flex justify-between w-full pl-6 pr-6">
+              <div>
+                <p class="font-bold">LMS Dashboard</p>
+              </div>
+              <div class="flex gap-5 justify-center items-center">
+                <input type="text" class="rounded-xl w-full h-9 p-3" />
+                <svg
+                class="cursor-pointer"
+                  width="20"
+                  height="20"
+                  viewBox="0 0 26 27"
+                  fill="none"
+                  xmlns="http://www.w3.org/2000/svg"
+                >
+                  <path
+                    fill-rule="evenodd"
+                    clip-rule="evenodd"
+                    d="M13 19.835C19.1092 19.835 21.9354 19.0512 22.2084 15.9056C22.2084 12.7621 20.2379 12.9642 20.2379 9.10722C20.2379 6.09451 17.3824 2.66669 13 2.66669C8.61769 2.66669 5.76211 6.09451 5.76211 9.10722C5.76211 12.9642 3.79169 12.7621 3.79169 15.9056C4.06572 19.0631 6.89194 19.835 13 19.835Z"
+                    stroke="#333333"
+                    stroke-width="1.5"
+                    stroke-linecap="round"
+                    stroke-linejoin="round"
+                  />
+                  <path
+                    d="M15.5879 23.0953C14.11 24.7363 11.8047 24.7557 10.3127 23.0953"
+                    stroke="#2F80ED"
+                    stroke-width="1.5"
+                    stroke-linecap="round"
+                    stroke-linejoin="round"
+                  />
+                </svg>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <div class="hero__section flex text-sm gap-2">
+        <div class="dashboard__section card p-4 gap-1 w-1/5">
+          <div
+            class="flex gap-5 hover:bg-blue-400 rounded-xl p-3 hover:cursor-pointer hover:text-white" 
+            title="Dashboard"
+          >
+            <svg
+              width="20"
+              height="20"
+              viewBox="0 0 24 24"
+              fill="none"
+              xmlns="http://www.w3.org/2000/svg"
+            >
+              <g opacity="0.7" clip-path="url(#clip0_13_553)">
+                <path
+                  d="M10 12.3H4C3.83431 12.3 3.7 12.1657 3.7 12V4C3.7 3.83431 3.83431 3.7 4 3.7H10C10.1657 3.7 10.3 3.83431 10.3 4V12C10.3 12.1657 10.1657 12.3 10 12.3ZM10 20.3H4C3.83431 20.3 3.7 20.1657 3.7 20V16C3.7 15.8343 3.83431 15.7 4 15.7H10C10.1657 15.7 10.3 15.8343 10.3 16V20C10.3 20.1657 10.1657 20.3 10 20.3ZM20 20.3H14C13.8343 20.3 13.7 20.1657 13.7 20V12C13.7 11.8343 13.8343 11.7 14 11.7H20C20.1657 11.7 20.3 11.8343 20.3 12V20C20.3 20.1657 20.1657 20.3 20 20.3ZM13.7 8V4C13.7 3.83431 13.8343 3.7 14 3.7H20C20.1657 3.7 20.3 3.83431 20.3 4V8C20.3 8.16569 20.1657 8.3 20 8.3H14C13.8343 8.3 13.7 8.16569 13.7 8Z"
+                  stroke="#333333"
+                  stroke-width="1.4"
+                />
+              </g>
+              <defs>
+                <clipPath id="clip0_13_553">
+                  <rect width="24" height="24" fill="white" />
+                </clipPath>
+              </defs>
+            </svg>
+            <p class="text-sm text-slate-600">Dashboard</p>
+          </div>
+          <div
+            class="flex gap-5 hover:bg-blue-400 rounded-2xl p-3 hover:cursor-pointer" title="Chats"
+          >
+            <svg
+              width="20"
+              height="20"
+              viewBox="0 0 20 20"
+              fill="none"
+              xmlns="http://www.w3.org/2000/svg"
+            >
+              <g opacity="0.7" clip-path="url(#clip0_13_491)">
+                <path
+                  d="M5.00002 14.3H4.71007L4.50505 14.505L2.36669 16.6434V3.33335C2.36669 2.80329 2.80329 2.36669 3.33335 2.36669H16.6667C17.1968 2.36669 17.6334 2.80329 17.6334 3.33335V13.3334C17.6334 13.8634 17.1968 14.3 16.6667 14.3H5.00002Z"
+                  stroke="#333333"
+                  stroke-width="1.4"
+                />
+              </g>
+              <defs>
+                <clipPath id="clip0_13_491">
+                  <rect width="20" height="20" fill="white" />
+                </clipPath>
+              </defs>
+            </svg>
+            <p class="text-sm text-slate-600">Chats</p>
+          </div>
+          <div
+            class="flex gap-5 hover:bg-blue-400 rounded-2xl p-3 hover:cursor-pointer" title="Courses"
+          >
+            <svg
+              width="20"
+              height="20"
+              viewBox="0 0 20 20"
+              fill="none"
+              xmlns="http://www.w3.org/2000/svg"
+            >
+              <g opacity="0.7" clip-path="url(#clip0_13_494)">
+                <path
+                  d="M2.50002 3.2H16.6667C16.7384 3.2 16.8 3.2616 16.8 3.33333V8.33333C16.8 8.40507 16.7384 8.46667 16.6667 8.46667H2.50002C2.42829 8.46667 2.36669 8.40507 2.36669 8.33333V3.33333C2.36669 3.2616 2.42829 3.2 2.50002 3.2ZM2.50002 11.5333H16.6667C16.7384 11.5333 16.8 11.5949 16.8 11.6667V16.6667C16.8 16.7384 16.7384 16.8 16.6667 16.8H2.50002C2.42829 16.8 2.36669 16.7384 2.36669 16.6667V11.6667C2.36669 11.5949 2.42829 11.5333 2.50002 11.5333Z"
+                  stroke="#333333"
+                  stroke-width="1.4"
+                />
+              </g>
+              <defs>
+                <clipPath id="clip0_13_494">
+                  <rect width="20" height="20" fill="white" />
+                </clipPath>
+              </defs>
+            </svg>
+            <p class="text-sm text-slate-600">Courses</p>
+          </div>
+          <div
+            class="flex gap-5 hover:bg-blue-400 rounded-2xl p-3 hover:cursor-pointer" title="Grades"
+          >
+            <svg
+              width="20"
+              height="20"
+              viewBox="0 0 20 20"
+              fill="none"
+              xmlns="http://www.w3.org/2000/svg"
+            >
+              <g opacity="0.9" clip-path="url(#clip0_13_497)">
+                <path
+                  d="M6.81112 6.11112C6.81112 4.34911 8.23799 2.92223 10 2.92223C11.762 2.92223 13.1889 4.34911 13.1889 6.11112C13.1889 7.87313 11.762 9.30001 10 9.30001C8.23799 9.30001 6.81112 7.87313 6.81112 6.11112ZM2.92223 14.8611C2.92223 14.4717 3.11175 14.0788 3.54723 13.6769C3.98746 13.2706 4.63073 12.904 5.39799 12.5967C6.93364 11.9815 8.78959 11.6722 10 11.6722C11.2104 11.6722 13.0664 11.9815 14.602 12.5967C15.3693 12.904 16.0126 13.2706 16.4528 13.6769C16.8883 14.0788 17.0778 14.4717 17.0778 14.8611V17.0778H2.92223V14.8611Z"
+                  stroke="#333333"
+                  stroke-width="1.4"
+                />
+              </g>
+              <defs>
+                <clipPath id="clip0_13_497">
+                  <rect width="20" height="20" fill="white" />
+                </clipPath>
+              </defs>
+            </svg>
+            <p class="text-sm text-slate-600">Grades</p>
+          </div>
+          <div
+            class="flex gap-5 hover:bg-blue-400 rounded-2xl p-3 hover:cursor-pointer" title="Problems?"
+          >
+            <svg
+              width="20"
+              height="20"
+              viewBox="0 0 20 20"
+              fill="none"
+              xmlns="http://www.w3.org/2000/svg"
+            >
+              <path
+                opacity="0.7"
+                d="M9 13H11V15H9V13ZM9 5H11V11H9V5ZM10 0C4.47 0 0 4.5 0 10C0 12.6522 1.05357 15.1957 2.92893 17.0711C3.85752 17.9997 4.95991 18.7362 6.17317 19.2388C7.38642 19.7413 8.68678 20 10 20C12.6522 20 15.1957 18.9464 17.0711 17.0711C18.9464 15.1957 20 12.6522 20 10C20 8.68678 19.7413 7.38642 19.2388 6.17317C18.7362 4.95991 17.9997 3.85752 17.0711 2.92893C16.1425 2.00035 15.0401 1.26375 13.8268 0.761205C12.6136 0.258658 11.3132 0 10 0V0ZM10 18C7.87827 18 5.84344 17.1571 4.34315 15.6569C2.84285 14.1566 2 12.1217 2 10C2 7.87827 2.84285 5.84344 4.34315 4.34315C5.84344 2.84285 7.87827 2 10 2C12.1217 2 14.1566 2.84285 15.6569 4.34315C17.1571 5.84344 18 7.87827 18 10C18 12.1217 17.1571 14.1566 15.6569 15.6569C14.1566 17.1571 12.1217 18 10 18V18Z"
+                fill="#333333"
+              />
+            </svg>
+            <p class="text-sm text-slate-600">Problems? Need help.</p>
+          </div>
+          <div class="line flex m-1">
+            <svg
+              width="238"
+              height="2"
+              viewBox="0 0 238 2"
+              fill="none"
+              xmlns="http://www.w3.org/2000/svg"
+            >
+              <path opacity="0.2" d="M0 1H238" stroke="#333333" />
+            </svg>
+          </div>
+          <div
+            class="flex gap-5 hover:bg-blue-400 rounded-2xl p-3 hover:cursor-pointer" title="Settings"
+          >
+            <svg
+              width="20"
+              height="21"
+              viewBox="0 0 20 21"
+              fill="none"
+              xmlns="http://www.w3.org/2000/svg"
+            >
+              <path
+                opacity="0.7"
+                d="M9.72933 6.5C10.7902 6.5 11.8076 6.92143 12.5578 7.67157C13.3079 8.42172 13.7293 9.43913 13.7293 10.5C13.7293 11.5609 13.3079 12.5783 12.5578 13.3284C11.8076 14.0786 10.7902 14.5 9.72933 14.5C8.66847 14.5 7.65105 14.0786 6.9009 13.3284C6.15076 12.5783 5.72933 11.5609 5.72933 10.5C5.72933 9.43913 6.15076 8.42172 6.9009 7.67157C7.65105 6.92143 8.66847 6.5 9.72933 6.5ZM9.72933 8.5C9.1989 8.5 8.69019 8.71071 8.31512 9.08579C7.94005 9.46086 7.72933 9.96957 7.72933 10.5C7.72933 11.0304 7.94005 11.5391 8.31512 11.9142C8.69019 12.2893 9.1989 12.5 9.72933 12.5C10.2598 12.5 10.7685 12.2893 11.1435 11.9142C11.5186 11.5391 11.7293 11.0304 11.7293 10.5C11.7293 9.96957 11.5186 9.46086 11.1435 9.08579C10.7685 8.71071 10.2598 8.5 9.72933 8.5ZM7.72933 20.5C7.47933 20.5 7.26933 20.32 7.22933 20.08L6.85933 17.43C6.22933 17.18 5.68933 16.84 5.16933 16.44L2.67933 17.45C2.45933 17.53 2.18933 17.45 2.06933 17.23L0.0693316 13.77C-0.0606684 13.55 -0.000668302 13.28 0.189332 13.13L2.29933 11.47L2.22933 10.5L2.29933 9.5L0.189332 7.87C-0.000668302 7.72 -0.0606684 7.45 0.0693316 7.23L2.06933 3.77C2.18933 3.55 2.45933 3.46 2.67933 3.55L5.16933 4.55C5.68933 4.16 6.22933 3.82 6.85933 3.57L7.22933 0.92C7.26933 0.68 7.47933 0.5 7.72933 0.5H11.7293C11.9793 0.5 12.1893 0.68 12.2293 0.92L12.5993 3.57C13.2293 3.82 13.7693 4.16 14.2893 4.55L16.7793 3.55C16.9993 3.46 17.2693 3.55 17.3893 3.77L19.3893 7.23C19.5193 7.45 19.4593 7.72 19.2693 7.87L17.1593 9.5L17.2293 10.5L17.1593 11.5L19.2693 13.13C19.4593 13.28 19.5193 13.55 19.3893 13.77L17.3893 17.23C17.2693 17.45 16.9993 17.54 16.7793 17.45L14.2893 16.45C13.7693 16.84 13.2293 17.18 12.5993 17.43L12.2293 20.08C12.1893 20.32 11.9793 20.5 11.7293 20.5H7.72933ZM8.97933 2.5L8.60933 5.11C7.40933 5.36 6.34933 6 5.57933 6.89L3.16933 5.85L2.41933 7.15L4.52933 8.7C4.12933 9.87 4.12933 11.14 4.52933 12.3L2.40933 13.86L3.15933 15.16L5.58933 14.12C6.35933 15 7.40933 15.64 8.59933 15.88L8.96933 18.5H10.4893L10.8593 15.89C12.0493 15.64 13.0993 15 13.8693 14.12L16.2993 15.16L17.0493 13.86L14.9293 12.31C15.3293 11.14 15.3293 9.87 14.9293 8.7L17.0393 7.15L16.2893 5.85L13.8793 6.89C13.1093 6 12.0493 5.36 10.8493 5.12L10.4793 2.5H8.97933Z"
+                fill="#333333"
+              />
+            </svg>
+            <p class="text-sm text-slate-600">Settings</p>
+          </div>
+        </div>
+
+        <div class="mid__section flex flex-col gap-2 w-3/5">
+          <div class="top__mid flex gap-2 justify-center items-center">
+            <div
+              class="middle__card card flex flex-col justify-center items-center h-24 w-full"
+            >
+              <div class="middle__card flex justify-center items-center gap-4">
+                <svg
+                  width="29"
+                  height="37"
+                  viewBox="0 0 26 37"
+                  fill="none"
+                  xmlns="http://www.w3.org/2000/svg"
+                  xmlns:xlink="http://www.w3.org/1999/xlink"
+                >
+                  <rect
+                    x="0.833344"
+                    width="25"
+                    height="37"
+                    fill="url(#pattern0)"
+                  />
+                  <defs>
+                    <pattern
+                      id="pattern0"
+                      patternContentUnits="objectBoundingBox"
+                      width="1"
+                      height="1"
+                    >
+                      <use
+                        xlink:href="#image0_5_58"
+                        transform="translate(0 0.162162) scale(0.0104167 0.00703829)"
+                      />
+                    </pattern>
+                    <image
+                      id="image0_5_58"
+                      width="96"
+                      height="96"
+                      xlink:href="data:image/png;base64,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"
+                    />
+                  </defs>
+                </svg>
+
+                <p>Courses Enrolled</p>
+              </div>
+              <p class="text-xl font-bold">12</p>
+            </div>
+            <div
+              class="middle__card card flex flex-col justify-center h-24 items-center w-full"
+            >
+              <div class="flex justify-center items-center gap-4">
+                <img src="./assets/Loading Sign.png" alt="" />
+
+                <p>Courses Completed</p>
+              </div>
+              <p class="text-xl font-bold">12</p>
+            </div>
+            <div
+              class="card flex flex-col justify-center h-24 items-center w-full"
+            >
+              <div class="flex justify-center items-center gap-4">
+                <img src="./assets/Prize.png" alt="" />
+                <p>Certificate Earned</p>
+              </div>
+              <p class="text-xl font-bold">12</p>
+            </div>
+          </div>
+          <div
+            class="bottom__mid card p-2 flex flex-col justify-center items-center"
+          >
+            <h1 class="font-bold text-base">Courses you're taking</h1>
+            <table class="table-auto w-full border-separate border-spacing-2">
+              <tr class="text-slate-700">
+                <td class="px-4 py-2">Course Title</td>
+                <td class="px-4 py-2">Teacher</td>
+                <td class="px-4 py-2">Duration</td>
+                <td class="px-4 py-2">Lesson Completed</td>
+              </tr>
+              <tbody class="">
+                <tr class="">
+                  <td class="px-4 py-2">JS Array</td>
+                  <td class="px-4 py-2">
+                    Chef Gordan Ramsey
+                  </td>
+                  <td class="px-4 py-2">
+                    13hours 15min 12sec
+                  </td>
+                  <td class="">
+                    <div
+                      class="w-full cursor-pointer bg-gray-200 rounded-full dark:bg-gray-700"
+                      title="25/100 Lessons Completed."
+                    >
+                      <div
+                        class="bg-blue-600 text-xs font-medium text-blue-100 text-center p-0.5 leading-none rounded-l-full"
+                        style="width: 25%"
+                      >
+                        25%
+                      </div>
+                    </div>
+                  </td>
+                </tr>
+                <tr class="">
+                  <td class="px-4 py-2">Learn Basic JS</td>
+                  <td class="px-4 py-2">Dr. Kanye West</td>
+                  <td class="px-4 py-2">
+                    24hours 15min 12sec
+                  </td>
+                  <td class="">
+                    <div
+                      class="w-full rounded-full cursor-pointer bg-gray-200 dark:bg-gray-700"
+                      title="57/100 Lessons Completed."
+                    >
+                      <div
+                        class="bg-blue-600 text-xs font-medium text-blue-100 text-center p-0.5 leading-none rounded-l-full"
+                        style="width: 57%"
+                      >
+                        57%
+                      </div>
+                    </div>
+                  </td>
+                </tr>
+                <tr class="">
+                  <td class="px-4 py-2">
+                    SEO Optimization
+                  </td>
+                  <td class="px-4 py-2">
+                    Mr. Jordan Belford
+                  </td>
+                  <td class="px-4 py-2">
+                    14hours 15min 12sec
+                  </td>
+                  <td class="">
+                    <div
+                      class="w-full bg-gray-200 rounded-full dark:bg-gray-700 cursor-pointer"
+                      title="75/100 Lessons Completed."
+                    >
+                      <div
+                        class="bg-blue-600 text-xs font-medium text-blue-100 text-center p-0.5 leading-none rounded-l-full"
+                        style="width: 75%"
+                      >
+                        75%
+                      </div>
+                    </div>
+                  </td>
+                </tr>
+              </tbody>
+            </table>
+          </div>
+        </div>
+
+        <div class="test__section w-1/5">
+          <div class="card flex flex-col gap-3 p-2 h-full">
+            <p class="font-bold">Upcoming Tests</p>
+            <div class="flex items-center gap-5">
+              <img src="./assets/Rectangle 12.png" alt="" />
+              <div>
+                <p>React Fundamentals</p>
+                <p>
+                  Test 2/7 <span class="text-red-700">Scheduled on Dec 5</span>
+                </p>
+              </div>
+            </div>
+            <div class="flex items-center gap-5">
+              <img src="./assets/Rectangle 127.png" alt="" />
+              <div>
+                <p>.NET Principles</p>
+                <p>
+                  Test 2/7 <span class="text-red-700">Scheduled on Dec 5</span>
+                </p>
+              </div>
+            </div>
+            <div class="flex items-center gap-5">
+              <img src="./assets/Rectangle 1277.png" alt="" />
+              <div>
+                <p>Keyword Identification</p>
+                <p>
+                  Test 2/7 <span class="text-red-700">Scheduled on Dec 5</span>
+                </p>
+              </div>
+            </div>
+            <div class="flex items-center gap-5">
+              <img src="./assets/Rectangle 123.png" alt="" />
+              <div>
+                <p>App demo</p>
+                <p>
+                  Test 2/7 <span class="text-red-700">Scheduled on Dec 5</span>
+                </p>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <div class="footer__part flex gap-2 text-sm">
+        <div class="premium__part flex w-1/5">
+          <div
+            class="card flex flex-col p-2 justify-center items-center w-full gap-2"
+          >
+            <p class="font-bold">Go Premium</p>
+            <div class="flex flex-col justify-center items-center">
+              <p class="text-slate-600">Explore 1000+ courses with</p>
+              <p class="text-slate-600">lifetime membership</p>
+            </div>
+            <img
+              src="./assets/Abstract DESIGN.png"
+              alt=""
+              style="height: 160px"
+            />
+            <button
+              class="bg-blue-500 hover:bg-blue-700 text-white font-bold py-2 px-4 rounded"
+            >
+              Get Access
+            </button>
+          </div>
+        </div>
+        <div class="recommendation__part card w-4/5">
+          <div class="flex flex-col p-3 gap-4">
+            <div class="flex justify-between">
+              <p class="font-bold">Recommended for you</p>
+              <p class="flex gap-4 cursor-pointer">
+                <svg
+                  width="18"
+                  height="12"
+                  viewBox="0 0 18 12"
+                  fill="none"
+                  xmlns="http://www.w3.org/2000/svg"
+                >
+                  <path
+                    d="M18 5H3.83L7.41 1.41L6 0L0 6L6 12L7.41 10.58L3.83 7H18V5Z"
+                    fill="#333333"
+                  />
+                </svg>
+
+                <svg
+                  width="18"
+                  height="12"
+                  viewBox="0 0 18 12"
+                  fill="none"
+                  xmlns="http://www.w3.org/2000/svg"
+                >
+                  <path
+                    d="M0 7L14.17 7L10.59 10.59L12 12L18 6L12 0L10.59 1.42L14.17 5L0 5V7Z"
+                    fill="#2F80ED"
+                  />
+                </svg>
+              </p>
+            </div>
+            <div class="recomendation__option flex justify-center gap-20 ">
+              <div class="flex flex-col justify-center items-center gap-1">
+                <img
+                  src="./assets/Rectangle 11.png"
+                  alt=""
+                  style="height: 156px; width: 250px"
+                />
+                <p class="font-bold">Web Development</p>
+                <p>30 Lessons | 23 hours</p>
+                <button
+                  class="bg-white shadow-lg hover:bg-blue-700 text-blue-700 font-bold py-2 px-4 rounded hover:text-white"
+                >
+                  Enroll Now
+                </button>
+              </div>
+              <div class="flex flex-col justify-center items-center gap-1">
+                <img
+                  src="./assets/Rectangle 1111.png"
+                  alt=""
+                  style="height: 156px; width: 250px"
+                />
+                <p class="font-bold">Game Development 501</p>
+                <p>30 Lessons | 23 hours</p>
+                <button
+                  class="bg-white shadow-lg hover:bg-blue-700 text-blue-700 font-bold py-2 px-4 rounded hover:text-white"
+                >
+                  Enroll Now
+                </button>
+              </div>
+              <div class="flex flex-col justify-center items-center gab-1">
+                <img
+                  src="./assets/Rectangle 1100.png"
+                  alt=""
+                  style="height: 156px; width: 250px"
+                />
+                <p class="font-bold">Ethical hacking 101</p>
+                <p>30 Lessons | 23 hours</p>
+                <button
+                  class="bg-white shadow-lg hover:bg-blue-700 text-blue-700 font-bold py-2 px-4 rounded hover:text-white"
+                >
+                  Enroll Now
+                </button>
+              </div>
+              <div class="flex flex-col justify-center items-center gap-1">
+                <img
+                  src="./assets/Rectangle 1100.png"
+                  alt=""
+                  style="height: 156px; width: 250px"
+                />
+                <p class="font-bold">Ethical hacking 101</p>
+                <p>30 Lessons | 23 hours</p>
+                <button
+                  class="bg-white shadow-lg hover:bg-blue-700 text-blue-700 font-bold py-2 px-4 rounded hover:text-white"
+                >
+                  Enroll Now
+                </button>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </body>
+</html>
